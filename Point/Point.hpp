@@ -11,6 +11,7 @@
             double Distance(Point);
             Point Add(Point);
             Point operator+ (Point);
+            Point operator- (Point);
             void Afficher();
             double GetX();
             double GetY();
