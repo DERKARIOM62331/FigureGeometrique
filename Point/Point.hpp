@@ -10,6 +10,7 @@
             void Move(double,double);
             double Distance(Point);
             Point Add(Point);
+            Point operator+ (Point);
             void Afficher();
             double GetX();
             double GetY();

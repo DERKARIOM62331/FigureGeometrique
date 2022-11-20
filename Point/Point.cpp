@@ -23,6 +23,13 @@ Point Point::Add(Point B)
     C.Y = this->Y + B.Y;
     return C;
 }
+Point Point::operator+ (Point B)
+{
+    Point C(0,0);
+    C.X = this->X + B.X;
+    C.Y = this->Y + B.Y;
+    return C;
+}
 void Point::Afficher()
 {
     cout << "(" << this->X << "," << this->Y << ")" << endl;
