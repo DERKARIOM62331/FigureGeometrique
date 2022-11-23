@@ -6,13 +6,13 @@
             double X;
             double Y;
         public:
-            Point(double,double);
+            Point(double x=0,double y=0);
             void Move(double,double);
             double Distance(Point);
             Point Add(Point);
             Point operator+ (Point);
             Point operator- (Point);
-            void Afficher();
+            virtual void Afficher();
             double GetX();
             double GetY();
             void SetX(double);
