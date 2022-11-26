@@ -9,9 +9,7 @@
         public:
             Forme(int);
             ~Forme();
-            virtual void Affichage()=0;
-            virtual double Prerimetre()=0;
-            virtual double Aire()=0;
+            virtual void Afficher()=0;
             int GetNbSommet();
     };
 #endif

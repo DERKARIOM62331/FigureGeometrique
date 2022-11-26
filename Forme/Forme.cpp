@@ -4,7 +4,8 @@
 using namespace std;
 Forme::Forme(int n)
 {
-    sommet = (Point*)malloc(sizeof(Point)*n);
+    nbr_sommet = n;
+    sommet = (Point*)malloc(sizeof(Point)*nbr_sommet);
 }
 Forme::~Forme()
 {
