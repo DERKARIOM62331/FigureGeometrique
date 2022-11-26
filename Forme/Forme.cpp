@@ -1,12 +1,16 @@
 #include <iostream>
+#include <stdlib.h>
 #include "Forme.hpp"
 using namespace std;
-
 Forme::Forme(int n)
 {
-    tab= new Point(n);
+    sommet = (Point*)malloc(sizeof(Point)*n);
 }
 Forme::~Forme()
 {
-    delete tab;
+    free(sommet);
+}
+int Forme::GetNbSommet()
+{
+    return nbr_sommet;
 }
