@@ -1,12 +1,11 @@
 #include <iostream>
 #include "Point/Point.hpp"
-#include "Forme/Forme.hpp"
+#include "quadri/quadri.hpp"
+using namespace std;
 int main()
 {
-    Point A(2,8) , B(8,2) , C(0,0);
-    C = A + B;
-    A = A - B;
-    C.Afficher();
-    A.Afficher();
+  Point o(2,3),n(1,6), v(3,2), g(5,9);
+  quadri f(o,n,v,g);
+    f.Afficher();
     return 0;
 }
