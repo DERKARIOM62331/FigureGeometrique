@@ -16,3 +16,9 @@ void Quadri::Afficher()
  for(int i=0; i<nbr_sommet; i++)
   sommet[i].Point::Afficher();
 }
+bool Quadri::est_carre()
+{
+  if(sommet[0].Distance(sommet[1]) == sommet[0].Distance(sommet[3]))
+    return true;
+  return false; 
+}

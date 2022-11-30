@@ -4,7 +4,8 @@
 class Quadri:public Forme
 {
      public:
-      Quadri(Point,Point,Point,Point);
-       void Afficher();
+     Quadri(Point,Point,Point,Point);
+     void Afficher();
+     bool est_carre();
 };
 #endif

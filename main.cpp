@@ -2,10 +2,15 @@
 #include "Point/Point.hpp"
 #include "Quadri/Quadri.hpp"
 using namespace std;
+using namespace std;
 int main()
 {
-  Point o(2,3),n(1,6), v(3,2), g(5,9);
-  Quadri f(o,n,v,g);
-  f.Afficher();
+  Point o(1,4),n(4,4), v(1,1), g(4,1);
+  Quadri Q(o,n,v,g);
+  Q.Afficher();
+  if(Q.est_carre())
+    cout << "oui\n";  
+  else
+    cout << "non\n";
   return 0;
 }
