@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include "rectangle.hpp"
 #include <cmath>
@@ -47,4 +48,4 @@ void rectangle::affichage()
 {
   rectangle R;
   cout<<"longueur"<<R.getlongueur()<<"\t"<<"largueur "<<R.getlargeur();
-}
+}*/

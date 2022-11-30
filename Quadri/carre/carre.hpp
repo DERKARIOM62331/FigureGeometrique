@@ -1,3 +1,4 @@
+/*
 #ifndef CARRE_H
 #define CARRE_H
 class carre:public quadri
@@ -9,4 +10,4 @@ class carre:public quadri
     float longueur();
     void affichag();
 };
-#endif
+#endif*/

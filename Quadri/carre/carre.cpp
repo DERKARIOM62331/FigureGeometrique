@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include "../quadri/quadri.hpp"
 #include "carre.hpp"
@@ -31,4 +32,4 @@ float carre::aire()
 {
   carre T;
  return (T.longueur*longueur);
-}
+}*/

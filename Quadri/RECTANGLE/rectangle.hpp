@@ -1,3 +1,4 @@
+/*
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 class rectangle :public quadri
@@ -10,4 +11,4 @@ class rectangle :public quadri
    void affichage();
    void deplacer(point*,point*);
 };
-#endif
+#endif*/

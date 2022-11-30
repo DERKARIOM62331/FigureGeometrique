@@ -9,7 +9,6 @@
         public:
             Forme(int);
             ~Forme();
-            virtual void Afficher()=0;
             int GetNbSommet();
     };
 #endif
