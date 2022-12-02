@@ -12,10 +12,17 @@ Triangle::Triangle(Point p1,Point p2,Point p3) : Forme(3)
 }
 void Triangle::Afficher()
 {
-   cout << " \tJe suis untriangle de coordonnées: ";
-    cout << " (" << sommet[0].GetX() << "," <<  sommet[0].GetY() << ")," ; 
-    cout << "(" << sommet[1].GetX() << "," <<  sommet[1].GetY() << ")," ;
-    cout << "(" << sommet[2].GetX() << "," <<  sommet[2].GetY() << ")" << endl; 
+   cout << " \tJe suis un triangle de coordonnées: ";
+   for(int i=0 ; i<3 ; i++)
+   {
+       cout << " (" << sommet[i].GetX() << "," <<  sommet[i].GetY() << ")" ;
+       if(i<2)
+        cout << "," ;
+        else
+            cout << endl; 
+   }
+    
+    
 }
 double Triangle::Perimetre()
 {
