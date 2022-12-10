@@ -40,8 +40,8 @@ Triangle Triangle::Translation(Vecteur v1)
 {
     Point A(0,0),B(0,0),C(0,0),D(0,0);
     D=v1.Milieu();
-    // A.SetX(sommet[0].GetX()+v1.sommet[0].GetX());
-    // A.SetY(sommet[0].GetY()+v1.sommet[0].GetY());
+    A.SetX(sommet[0].GetX()+v1.sommet[0].GetX());
+    A.SetY(sommet[0].GetY()+v1.sommet[0].GetY());
     B.SetX(sommet[1].GetX()+D.GetX());
     B.SetY(sommet[1].GetY()+D.GetY());
     C.SetX(sommet[2].GetX()+v1.sommet[1].GetX());
@@ -49,9 +49,3 @@ Triangle Triangle::Translation(Vecteur v1)
     Triangle T(C,B,A);
     return T;   
 } 
-    // T.sommet[0]=sommet[0].GetX+v1.sommet[0].GetX();
-    // T.sommet[1]=sommet[1].GetX+v1.sommet[1].GetX();
-    // T.sommet[2]=sommet[2].GetX+v1.sommet[1].GetX();
-    // T.sommet[0]=sommet[0].GetY+v1.sommet[0].GetY();
-    // T.sommet[1]=sommet[1].GetY+v1.sommet[1].GetY();
-    // T.sommet[2]=sommet[2].GetY+v1.sommet[1].GetY();
