@@ -205,7 +205,7 @@ int main()
         //     cout << "\n\tOption invalide !!!" << endl;
         //     break;
     }
-    }
+    };
 
     return 0;
 }
