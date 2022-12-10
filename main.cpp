@@ -22,9 +22,9 @@ int main()
     cout << " . " << endl;
     cout << "\nChoix : " << endl;
     cin >> ch;
-    switch(ch)
+    while(ch >0 && ch<6)
     {
-        double a,b,c,d,e,f,g,h; 
+      double a,b,c,d,e,f,g,h; 
         //char v;
         cout << "Vous allez les coordonnées de quatres(4) points" << endl;
         cout << "Le 1er point : " ; cin >> a >> b;
@@ -37,9 +37,23 @@ int main()
         Point D(g,h);
         Triangle T(A,B,C);
         Cercle C1(A,B);
-        Vecteur V1(A,B),V2(C,D);
+        Vecteur V(A,B),V2(C,D);
+    
+    switch(ch)
+    {
+        
         case 1:// point
-
+            double a,b,c,d,e,f,g,h; 
+          //char v;
+          cout << "Vous allez les coordonnées de quatres(4) points" << endl;
+          cout << "Le 1er point : " ; cin >> a >> b;
+          Point A(a,b);
+          cout << "Le 2e point : " ; cin >> c >> d;
+          Point B(c,d);
+          cout << "Le 3e point : " ; cin >> e >> f;
+          Point C(e,f);
+          cout << "Le 4e point : " ; cin >> g >> h;
+          Point D(g,h);
             int ch1;
             cout << "1 . Additionner des points " << endl;
             cout << "2 . Afficher un point " << endl;
@@ -103,10 +117,7 @@ int main()
             cout << "3 . Afficher l'aire d'un triangle " << endl;
             cout << "4 . Faire la translation d'un triangle " << endl;
             cout << "5 . Pour retourner au menu principal " << endl;
-            // cout << "7 .  " << endl;
-            // cout << "8 .  " << endl;
-            // cout << "9 .  " << endl;
-            // cout << "\n\tVotre choix : ";
+            cout << "\n\tVotre choix : ";
             cin >> ch2;
             switch(ch2)
             {
@@ -126,8 +137,6 @@ int main()
                     cout << "Veuillez saisir les coordonnées du vecteur : " <<endl;
                     cout << "\t1er point : " ; cin >> a >> b;
                     cout << "\t2e point : " ; cin >> c >> d ;
-                    Point V1(a,b),V2(c,d);
-                    Vecteur V(V1,V2);
                     T.Translation(V);
                     cout << "\tLe triangle (A,B,C) apres translation est : " << endl;
                     T.Afficher();
@@ -175,28 +184,10 @@ int main()
             switch(ch4)
             {
                 case 1:
-                    cout << "\tVecteur V1(A,B) : " << endl;
-                    V1.Afficher();
+                    cout << "\tVecteur V(A,B) : " << endl;
+                    V.Afficher();
                     cout << "\tVecteur V2(C,D) : " << endl;
                     V2.Afficher();
-                    break;
-                // case 2:
-                //     Vecteur VC(A,B);
-                //     VC=V1+V2;
-                //     cout << "La somme des deux vecteurs V1 et v2 est : " ; 
-                //     VC.Afficher();
-                //     break;
-                case 3:
-
-                    break;
-                case 4:
-
-                    break;
-                case 5:
-
-                    break;
-                case 6:
-
                     break;
                 default: cout << "\n\tOption invalide !!!" << endl;
                     break;
@@ -210,9 +201,10 @@ int main()
         case 6:
             // Pour retourner
             break;
-        default: 
-            cout << "\n\tOption invalide !!!" << endl;
-            break;
+        // default: 
+        //     cout << "\n\tOption invalide !!!" << endl;
+        //     break;
+    }
     }
 
     return 0;
