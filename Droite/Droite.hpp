@@ -2,15 +2,11 @@
 #ifndef DROITE_HPP
 #define DROITE_HPP
 #include "../Forme/Forme.hpp"
-class Droite : public class Forme
+class Droite : public Forme
 {
-	private:
-		Point A;
-		Point B;
 	public:
 		Droite(Point,Point);
 		int SontSurMemeDroite(Point,Point,Point);
-		int SontDroitesParalleles(Droite,Droite);
-		int SontDroitesPerpendiculaires(Droite,Droite);
+		int SontDroitesParalleles(Droite);
 };
-#endif;
+#endif

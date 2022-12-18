@@ -39,8 +39,8 @@ Point Point::operator- (Point B)
 }
 void operator=(Point A)
 {
-	this->x=A.x;
-	this->y=A.y;
+	this->X=A.X;
+	this->Y=A.Y;
 }
 void Point::Afficher()
 {
