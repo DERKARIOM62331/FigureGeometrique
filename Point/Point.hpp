@@ -12,6 +12,7 @@
             Point Add(Point);
             Point operator+ (Point);
             Point operator- (Point);
+	    void operator=(Point);
             virtual void Afficher();
             double GetX();
             double GetY();

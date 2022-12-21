@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>/*
 #include <string>
 #include <math.h>
 #include <stdlib.h>
@@ -8,9 +8,17 @@
 #include "Vecteur/Vecteur.hpp"
 #include "Cercle/Cercle.hpp"
 #include "Quadri/Quadri.hpp"
+*/
+#include "Point/Point.hpp"
+#include "Droite/Droite.hpp"
 using namespace std;
 int main()
 {
+
+	Point A,B(1,3),C(1,1),D(2,2);
+	Droite D1(A,B),D2(C,D);
+	cout<<D1.SontSurMemeDroite(A,B,C);
+	/*
     int ch;
     cout << "\t######\t*****  GESTION DES FIGURES GEOMETRIQUES  *****\t######" << endl;
     cout << "1 . Operation sur les Points" << endl;
@@ -205,7 +213,7 @@ int main()
         //     cout << "\n\tOption invalide !!!" << endl;
         //     break;
     }
-    };
+    };*/
 
     return 0;
 }

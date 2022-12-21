@@ -37,6 +37,11 @@ Point Point::operator- (Point B)
     C.Y = this->Y - B.Y;
     return C;
 }
+void operator=(Point A)
+{
+	this->X=A.X;
+	this->Y=A.Y;
+}
 void Point::Afficher()
 {
     cout << "(" << this->X << "," << this->Y << ")" << endl;
